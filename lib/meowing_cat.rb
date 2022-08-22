@@ -1,17 +1,14 @@
 require 'pry'
 
 ## code your solution here. 
-class = class 
-    attr_accessor :cat
-    def initialize(cat)
-        @cat = cat
-    end
-    def meow
-        puts "meow"
-    end
+class Cat
+    attr_accessor :name
     
-    def cat
-        @cat
+    def meow
+        puts "meow!"
     end
 end
 
+c1 = Cat.new
+c1.name = "Fluffy"
+c1.meow
